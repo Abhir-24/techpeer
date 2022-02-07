@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="/css/home.css" />
+
+<div class="page-container">
+    <div id = "starter">
+      <div class="banner">
+          <h3 class="banner-content">"Coming together is a beginning, staying together is progress, and working together is success."</h3>
+          <h1 class="banner-title">Techpeer</h1>
+          <div class="input-id">
+            <input
+              id="myInput"
+              type="text"
+              placeholder="Enter Room ID"
+            />
+          </div>
+          <a href="/users/" id="join" class="banner-btn" onclick="myFunction()"> Join </a>
+          <a href="/users/" id="create" class="banner-btn">Create</a>
+       </div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="benefits clearfix" id="starter1">
+        <div class="points">
+        <span class="icon"><i class="fas fa-code"></i></span>
+        <h3 class="head">Support for Multiple Programming Languages</h3>   
+        <p class="head-content">Supports many programming languages syntax with many intellisense features for almost every language to help you</p> 
+        </div>
+
+        <div class="points">
+          <span class="icon"><i class="fas fa-adjust"></i></span>
+          <h3 class="head">Multiple Themes Feature</h3>   
+          <p class="head-content">Whether you are a dark theme lover or light theme lover, we have got you. Choose from a variety of editor theme</p> 
+          </div>
+
+        <div class="points">
+        <span class="icon"><i class="fas fa-network-wired"></i></span>
+        <h3 class="head">Video-Audio Conferencing Support<br></h3>   
+        <p class="head-content">Communicate with your fellow coders via video-conferencing for better productivity</p> 
+        </div>
+
+        <div class="points">
+        <span class="icon"><i class="fas fa-file-code"></i></span>
+        <h3 class="head">File Upload/Download Feature</h3>   
+        <p class="head-content">Save your code by downloading and then continue by uploading the file in the editor</p> 
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+          <h1 class="contact-us">Contact us</h1>
+      </div>
+      <div class="row">
+          <h4 class="contact-sub" style="text-align:center">We'd love to hear from you!</h4>
+      </div>
+      <div class="row input-container">
+        <form action="https://formspree.io/xoqngkyk" method="post">
+          <div class="col-xs-12">
+            <div class="styled-input wide">
+              <input class="form-in" type="text" name="name" required />
+              <label>Name</label> 
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="styled-input">
+              <input class="form-in" type="text" name="email" required />
+              <label>Email</label> 
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="styled-input wide">
+              <textarea name="message" required></textarea>
+              <label>Message</label>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <button type="submit" class="btn-lrg submit-btn">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>    
+    
+  <script>
+    function myFunction() {
+      var inputVal = document.getElementById("myInput").value;
+      var anchor = document.getElementById("join");
+      anchor.href = anchor.href + inputVal;
+
+      document.getElementById("myInput").innerHTML="";
+    }
+  </script>
+</div>

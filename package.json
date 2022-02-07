@@ -1,0 +1,23 @@
+{
+  "name": "techpeer",
+  "version": "1.0.0",
+  "description": "A real time editor for collaboration for projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Abhir",
+  "license": "ISC",
+  "dependencies": {
+    "codemirror": "^5.65.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-ejs-layouts": "^2.5.1",
+    "nodemon": "^2.0.15",
+    "peer": "^0.6.1",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1",
+    "uuid": "^8.3.2"
+  }
+}
