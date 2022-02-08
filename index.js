@@ -25,4 +25,3 @@ app.set('views', path.join(__dirname, 'views'));
 app.use('/', require('./routes'));
 
 server.listen(process.env.PORT || 3000);
-// console.log("working fine");
